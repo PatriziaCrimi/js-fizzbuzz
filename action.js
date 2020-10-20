@@ -67,3 +67,34 @@ for (number = 1; number <= 100; number++) {
   }
 }
 console.log('');
+
+
+// ********* SOLUTION NUMBER 4 - WITH ARRAY & OUTPUT IN HTML *********
+console.log('*** SOLUTION NUMBER 4 - WITH ARRAY & OUTPUT IN HTML ***');
+// Initialization of variables
+var results_array = [];
+number = 1;
+
+// Generating numbers ranging from 1 to 100
+while (number <= 100) {
+  // Check multiples of 3 and 5
+  if (!(number % 3) && !(number % 5)) {
+    results_array.push('FizzBuzz');
+  } else if (!(number % 3)) {
+    results_array.push('Fizz');
+  } else if (!(number % 5)) {
+    results_array.push('Buzz');
+  } else {
+    results_array.push(number);
+  }
+  number++;
+}
+console.log('The final array is: ');
+console.log(results_array);
+console.log('');
+
+// Print Output in HTML
+document.getElementsByClassName('number-item');
+for (var i = 0; i < document.getElementsByClassName('number-item').length; i++) {
+  document.getElementsByClassName('number-item')[i].innerHTML =  results_array[i];
+}
