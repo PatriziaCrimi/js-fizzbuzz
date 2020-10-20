@@ -48,3 +48,22 @@ do {
   number++;
 } while (number <= 100);
 console.log('');
+
+
+// ********* SOLUTION NUMBER 3 - WITHOUT ARRAY & FOR LOOP *********
+console.log('*** SOLUTION NUMBER 3 - WITHOUT ARRAY & FOR LOOP ***');
+
+// Generating numbers ranging from 1 to 100
+for (number = 1; number <= 100; number++) {
+  // Check multiples of 3 and 5
+  if (!(number % 3) && !(number % 5)) {
+    console.log('FizzBuzz');
+  } else if (!(number % 3)) { // --> number % 3 === 0 (false)
+    console.log('Fizz');
+  } else if (!(number % 5)) { // --> number % 5 === 0 (false)
+    console.log('Buzz');
+  } else {
+    console.log(number);
+  }
+}
+console.log('');
