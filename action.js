@@ -26,3 +26,25 @@ while (number <= 100) {
   number++;
 }
 console.log('');
+
+
+// ********* SOLUTION NUMBER 2 - WITHOUT ARRAY & DO-WHILE LOOP *********
+console.log('*** SOLUTION NUMBER 2 - WITHOUT ARRAY & DO-WHILE LOOP ***');
+// Initialization of variables
+number = 1;
+
+// Generating numbers ranging from 1 to 100
+do {
+  // Check multiples of 3 and 5
+  if (!(number % 3) && !(number % 5)) {
+    console.log('FizzBuzz');
+  } else if (!(number % 3)) {
+    console.log('Fizz');
+  } else if (!(number % 5)) {
+    console.log('Buzz');
+  } else {
+    console.log(number);
+  }
+  number++;
+} while (number <= 100);
+console.log('');
