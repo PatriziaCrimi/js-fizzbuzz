@@ -98,3 +98,31 @@ document.getElementsByClassName('number-item');
 for (var i = 0; i < document.getElementsByClassName('number-item').length; i++) {
   document.getElementsByClassName('number-item')[i].innerHTML =  results_array[i];
 }
+
+
+// ********* SOLUTION NUMBER 5 - IMPROVED REUSABILITY OF THE CODE *********
+// WITHOUT ARRAY & WHILE LOOP
+console.log('*** SOLUTION NUMBER 5 - IMPROVED REUSABILITY OF THE CODE ***');
+
+// Initialization of variables
+var minimum_number = 1;
+var maximum_number = 100;
+const first_divisor = 3;
+const second_divisor = 5;
+
+// Generating numbers ranging from "minimum_number" to "maximum_number""
+number = minimum_number;
+while (number <= maximum_number) {
+  // Check multiples of 3 and 5
+  if (!(number % first_divisor) && !(number % second_divisor)) {
+    console.log('FizzBuzz');
+  } else if (!(number % first_divisor)) { // --> number % 3 === 0 (false)
+    console.log('Fizz');
+  } else if (!(number % second_divisor)) { // --> number % 5 === 0 (false)
+    console.log('Buzz');
+  } else {
+    console.log(number);
+  }
+  number++;
+}
+console.log('');
