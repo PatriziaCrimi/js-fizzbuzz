@@ -5,8 +5,7 @@ al posto dei multipli di 5, deve stampare "Buzz"
 al posto dei multipli sia di 3 che di 5, deve stampare "FizzBuzz".
 */
 
-
-// ********* SOLUTION NUMBER 1 - WITHOUT ARRAY & WHILE LOOP *********
+// ********* SOLUTION NUMBER 1 - WHILE LOOP & WITHOUT ARRAY *********
 console.log('*** SOLUTION NUMBER 1 - WITHOUT ARRAY & WHILE LOOP ***');
 
 // Initialization of variables
@@ -28,7 +27,7 @@ while (number <= 100) {
 console.log('');
 
 
-// ********* SOLUTION NUMBER 2 - WITHOUT ARRAY & DO-WHILE LOOP *********
+// ********* SOLUTION NUMBER 2 - DO-WHILE LOOP & WITHOUT ARRAY *********
 console.log('*** SOLUTION NUMBER 2 - WITHOUT ARRAY & DO-WHILE LOOP ***');
 // Initialization of variables
 number = 1;
@@ -50,7 +49,7 @@ do {
 console.log('');
 
 
-// ********* SOLUTION NUMBER 3 - WITHOUT ARRAY & FOR LOOP *********
+// ********* SOLUTION NUMBER 3 - FOR LOOP & WITHOUT ARRAY *********
 console.log('*** SOLUTION NUMBER 3 - WITHOUT ARRAY & FOR LOOP ***');
 
 // Generating numbers ranging from 1 to 100
@@ -94,9 +93,9 @@ console.log(results_array);
 console.log('');
 
 // Print Output in HTML
-document.getElementsByClassName('number-item');
-for (var i = 0; i < document.getElementsByClassName('number-item').length; i++) {
-  document.getElementsByClassName('number-item')[i].innerHTML =  results_array[i];
+var number_item = document.getElementsByClassName('number-item');
+for (var i = 0; i < number_item.length; i++) {
+  number_item[i].innerHTML =  results_array[i];
 }
 
 
@@ -125,4 +124,3 @@ while (number <= maximum_number) {
   }
   number++;
 }
-console.log('');
